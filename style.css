@@ -1,0 +1,237 @@
+:root {
+    --bg-dark: #1a1a1a;
+    --bg-medium: #2a2a2a;
+    --text-light: #e0e0e0;
+    --text-muted: #aaaaaa;
+    --accent-grey: #555555;
+    --link-color: #99ccff; /* A subtle blue for links */
+    --hover-color: #6699ee; /* Slightly darker blue on hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--bg-medium);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-grey);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Main Content Sections */
+main {
+    padding: 40px 0;
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--link-color); /* Subtle accent under headings */
+}
+
+.section-card {
+    background-color: var(--bg-medium);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; /* Space between cards */
+}
+
+/* Projects Section Specifics */
+.project-card {
+    margin-bottom: 30px;
+    border-left: 3px solid var(--link-color); /* A subtle vertical accent for projects */
+    padding-left: 20px;
+}
+
+.project-card h3 {
+    color: var(--text-light);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.project-card .btn-link {
+    display: inline-block;
+    background-color: var(--link-color);
+    color: var(--bg-dark);
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.project-card .btn-link:hover {
+    background-color: var(--hover-color);
+}
+
+/* Skills Section Specifics */
+#skills h3 {
+    color: var(--text-light);
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--accent-grey);
+    padding-bottom: 5px;
+}
+
+#skills ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#skills ul li {
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}
+
+#skills ul li strong {
+    color: var(--text-light);
+}
+
+/* Experience Section Specifics */
+.experience-item {
+    margin-bottom: 30px;
+    border-left: 3px solid var(--accent-grey);
+    padding-left: 20px;
+}
+
+.experience-item h3 {
+    color: var(--text-light);
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: disc;
+    margin-left: 25px;
+    color: var(--text-muted);
+}
+
+.experience-item ul li {
+    margin-bottom: 5px;
+}
+
+/* Contact Section */
+#contact p a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-medium);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid var(--accent-grey);
+    font-size: 0.9em;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    section {
+        padding: 20px 0;
+    }
+    .container {
+        padding: 15px;
+    }
+    .project-card, .experience-item {
+        padding-left: 10px;
+    }
+}
