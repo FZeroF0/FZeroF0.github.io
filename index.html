@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaled Moussa - Software Developer & Cybersecurity Enthusiast</title>
+    
+    <!-- SEO Meta Tags for Indexing -->
+    <title>Khaled Moussa | Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Khaled Elsayed Fathi Moussa, an aspiring Software Developer based in Giza, Egypt specializing in Python, Linux automation, and backend infrastructure.">
+    <meta name="keywords" content="Khaled Moussa, Software Developer, Python, Backend, Linux, Arch Linux, DevOps, Egypt Developer, Portfolio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://khaled-moussa.vercel.app">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://khaled-moussa.vercel.app">
+    <meta property="og:title" content="Khaled Moussa | Software Developer Portfolio">
+    <meta property="og:description" content="Explore Python-based automation, full-stack systems, and infrastructure tools built by Khaled Moussa.">
+    <meta property="og:image" content="https://khaled-moussa.vercel.app/og-image.jpg">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +25,7 @@
     <header>
         <div class="container">
             <h1>Khaled Moussa</h1>
-            <p>Aspiring Software Developer & Cybersecurity Enthusiast</p>
+            <p>Aspiring Software Developer</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -27,91 +41,44 @@
     <main>
         <section id="about" class="container section-card">
             <h2>About Me</h2>
-            <p>Hello, I'm Khaled Elsayed Fathi Moussa, a passionate aspiring Software Developer and cybersecurity enthusiast based in Egypt. My journey into technology began in 6th grade at Evolution Academy, where I was introduced to the fundamentals of Python, HTML, and CSS. While I enjoyed the logic and power of Python, my interests gravitated away from traditional web development early on.</p>
-            <p>I've always been driven by a strong academic focus, reflected in my early achievements: I was recognized as the <strong>8th ranked student</strong> in my school during elementary school and the <strong>9th ranked student</strong> in preparatory school, demonstrating consistent dedication and academic excellence from a young age.</p>
-            <p>This initial spark led me to the Digital Egyptian Cubs Initiative, a government-provided program where I successfully completed both Level 1 and Level 2. During this period, I developed a profound passion for Linux and its capabilities, which led me to actively participate in administering my school's small website alongside IT officials. This hands-on experience introduced me to basic SQL and JavaScript for backend interactions, and familiarized me with SQLite and similar database systems. The initiative also honed my essential soft skills, including communication and team leadership.</p>
-            <p>I am driven by a curiosity to understand how computer systems work and a desire to build robust solutions. My focus is currently on deepening my expertise in Software Developering and exploring the intricate world of cybersecurity. Beyond code, I find joy in strategic thinking, which I pursue through my love for chess and football.</p>
+            <p>Hello, I'm Khaled Elsayed Fathi Moussa, a highly driven aspiring Software Developer based in Giza, Egypt[cite: 1]. Currently a high school student (Grade 11) with an expected graduation in July 2027, I am passionate about contributing to real development tasks, systems optimization, and internal tools[cite: 1]. My tech journey started early in 6th grade at Evolution Academy, where I earned my Python certificate[cite: 1].</p>
+            <p>I maintain a strong academic focus, ranking <strong>8th in elementary school</strong> and <strong>9th in preparatory school</strong>[cite: 1].</p>
+            <p>Through the government-provided Digital Egyptian Cubs Initiative (DECI), I completed Level 1 and 2 certifications and am currently participating in its mentorship program[cite: 1]. This foundation sparked a deep capability in Linux system administration, backend engineering, and foundational DevOps principles like CI/CD and deployment automation[cite: 1]. Beyond writing code, I love strategic mapping, which I channel through playing chess and football.</p>
         </section>
+
         <section id="projects" class="container">
             <h2>My Projects</h2>
-           <div class="project-card section-card">
+            
+            <div class="project-card section-card">
                 <h3>EchoSphere: A Private Communication Platform</h3>
-                <p><strong>Problem & Goal:</strong> My friends and I often found it challenging to communicate effectively on mainstream social media platforms due to overwhelming clutter and distractions. My goal was to take the initiative to build a dedicated, private space for direct and focused communication among a close-knit group.</p>
-                <p><strong>Solution & My Role:</strong> As the sole developer, I designed and implemented EchoSphere, a real-time web-based communication platform. The application facilitates instant messaging and direct interaction, providing an uncluttered alternative to crowded social media. While conceptually straightforward, this project served as a comprehensive, hands-on learning experience in full-stack web application development.</p>
-                <p><strong>Key Technologies:</strong> Python (Flask for the web framework), Flask-SocketIO (for real-time, bi-directional communication), JavaScript (for client-side interactivity), HTML and CSS (for front-end structure and styling), and Nginx (for serving the application and handling reverse proxy). I also utilized foundational understanding of SQL for potential database integration.</p>
-                <p><strong>Challenges & Learning:</strong> This project was pivotal in significantly deepening my understanding of core backend web technologies. I learned how to set up and configure Flask applications from scratch, implement real-time features using WebSockets (via SocketIO), and integrate Nginx as a robust web server and reverse proxy. The process of building a complete backend from the ground up greatly solidified my existing knowledge and provided invaluable insights into how large-scale websites function on the internet.</p>
-                <p><strong>Impact:</strong> EchoSphere successfully created a dedicated, distraction-free environment for private communication with friends. More importantly, it served as an intensive learning vehicle, providing me with practical, real-world experience in building and deploying a full-stack web application, reinforcing my backend development skills, and exposing me to critical deployment tools like Nginx.</p>
-                <a href="https://github.com/FZeroF0/Echosphere" class="btn-link">View on GitHub</a>
+                <p><strong>Problem & Goal:</strong> Mainstream communication channels are riddled with digital clutter. I wanted to take the initiative to build a dedicated, private space for secure, direct communication for a close-knit group[cite: 1].</p>
+                <p><strong>Solution & Infrastructure:</strong> Developed a functional real-time web communication platform using Flask and Flask-SocketIO[cite: 1]. Handled comprehensive deployment tasks using Nginx as a reverse proxy, configuring secure Ngrok tunnels to make the local environment accessible and highly reliable[cite: 1].</p>
+                <p><strong>Key Technologies:</strong> Python (Flask), Flask-SocketIO, Nginx, Ngrok, JavaScript, HTML/CSS[cite: 1].</p>
+                <a href="https://github.com/FZeroF0/Echosphere" class="btn-link" target="_blank" rel="noopener">View on GitHub</a>
             </div>
+
             <div class="project-card section-card">
                 <h3>Dynamic Public Server Access & Management</h3>
-                <p><strong>Problem:</strong> Faced with restrictive ISP policies that blocked local server hosting, I needed a reliable and constantly accessible public link for my local Flask web application. Existing dynamic DNS solutions proved insufficient due to frequent IP changes and complex configurations.</p>
-                <p><strong>Solution & My Role:</strong> As the sole developer, I engineered a robust system for establishing and maintaining public access to my local development server. This involved configuring Ngrok for secure tunneling, setting up Nginx as a reverse proxy, and using Gunicorn as a WSGI server to efficiently serve the Flask application. A crucial component was a Python script that dynamically fetched the current Ngrok public URL and automatically updated a GitHub Gist, which then informed my website's monitoring system. I also explored and implemented dynamic DNS solutions like `ddclient` with `no-ip.com` to achieve consistent domain-to-IP mapping, demonstrating adaptability when faced with ISP restrictions.</p>
-                <p><strong>Key Technologies:</strong> Python, Flask, Gunicorn, Nginx, Ngrok, GitHub Gists, `requests` library, `ddclient`, `no-ip` API, Linux administration, Comprehensive Networking concepts (HTTP, TCP/IP, ports, tunneling, dynamic DNS).</p>
-                <p><strong>Challenges & Learning:</strong> The biggest challenge was navigating and overcoming persistent ISP blocking measures and managing dynamic IP addresses. This required deep dives into network protocols, server configuration (Nginx, Gunicorn), and dynamic DNS services. Troubleshooting Ngrok tunnel stability and ensuring seamless integration with existing services further refined my Linux system administration and networking expertise.</p>
-                <p><strong>Impact:</strong> This project successfully enabled continuous, reliable public access to my local web applications, overcoming significant connectivity hurdles. It facilitated consistent remote development and provided a stable platform for showcasing my Flask application, ensuring that my work was always accessible.</p>
-                <a href="https://github.com/FZeroF0/scripts/blob/main/update_ngrok_url.py" class="btn-link">View on GitHub</a>
+                <p><strong>Problem:</strong> Navigating restrictive ISP setups that block typical local web hosting scenarios while attempting to maintain reliable public infrastructure channels.</p>
+                <p><strong>Solution:</strong> Automated dynamic server tunnels using a custom Python updater script. The tool reads active Ngrok instances, triggers updates directly to GitHub Gists, and routes traffic through Gunicorn and Nginx reverse proxy layouts. Added fallback dynamic DNS handling via <code>ddclient</code> and <code>no-ip.com</code> profiles.</p>
+                <p><strong>Key Technologies:</strong> Python, Gunicorn, Nginx, Ngrok, GitHub Gist API, No-IP API, Networking (TCP/IP, HTTP/S, Ports)[cite: 1].</p>
+                <a href="https://github.com/FZeroF0/scripts/blob/main/update_ngrok_url.py" class="btn-link" target="_blank" rel="noopener">View on GitHub</a>
             </div>
 
             <div class="project-card section-card">
                 <h3>Automated Website Uptime Monitor</h3>
-                <p><strong>Problem:</strong> To ensure the continuous availability of my personal web services, particularly the dynamic Ngrok tunnel linking to my local development server, I needed a reliable and automated way to monitor website uptime and receive immediate alerts in case of any downtime. A significant challenge was ensuring the notification system itself was robust and didn't conflict with system processes.</p>
-                <p><strong>Solution & My Role:</strong> As the sole developer, I built a Python-based website uptime monitoring script. This script is designed to run continuously, periodically fetching the most current Ngrok URL from a GitHub Gist (updated by my other project) and then checking the accessibility of that URL along with other pre-configured static websites. It integrates with desktop notifications to provide real-time alerts.</p>
-                <p><strong>Key Technologies:</strong> Python, `requests` library, `subprocess` module, `dunstify` for notifications, GitHub Gists (for dynamic URL management), Linux command-line tools.</p>
-                <p><strong>Challenges & Learning:</strong> A critical challenge was troubleshooting and resolving an issue where `dunstify` (the notification command) would sometimes experience **PID duplication**, causing it to break and prevent notifications from displaying. Through focused debugging, I identified and rectified this process management conflict, ensuring the notification system's reliability. This experience significantly enhanced my understanding of inter-process communication and Linux system troubleshooting.</p>
-                <p><strong>Impact:</strong> This project provides real-time uptime monitoring for my critical web services, including my personal Ngrok-exposed development environment. It effectively helps me keep track of essential websites, ensuring their continuous availability and significantly reducing my stress about their operational status.</p>
-                <a href="https://github.com/FZeroF0/scripts/blob/main/monitor_websites.py" class="btn-link">View on GitHub</a>
+                <p><strong>Problem:</strong> Ensuring continuous uptime visibility across dynamic infrastructure tunnels and catching process deadlocks immediately.</p>
+                <p><strong>Solution:</strong> Engineered a real-time system monitoring daemon in Python that actively reads operational infrastructure nodes[cite: 1]. Integrated multi-layered notification modules with <code>dunstify</code>, tracking down and solving process management issues and system PID duplication deadlocks to keep alert modules highly functional.</p>
+                <p><strong>Key Technologies:</strong> Python, Network Troubleshooting, Subprocess System Calls, Linux CLI Alerts[cite: 1].</p>
+                <a href="https://github.com/FZeroF0/scripts/blob/main/monitor_websites.py" class="btn-link" target="_blank" rel="noopener">View on GitHub</a>
             </div>
 
             <div class="project-card section-card">
-                <h3>Python Text-Based RPG</h3>
-                <p><strong>Problem & Goal:</strong> My primary goal for this project was to apply my foundational Python skills to build a fun and engaging text-based adventure game. I aimed to explore advanced programming concepts like object-oriented programming (using classes and subclasses) in a practical application, pushing the boundaries of my understanding.</p>
-                <p><strong>Solution & My Role:</strong> As the sole developer, I designed and implemented a feature-rich, console-based Role-Playing Game (RPG) in Python. The game incorporated several intricate systems to create an immersive player experience:
-                <ul>
-                    <li><strong>Timed Combat System:</strong> A turn-based combat system where players strategically engage enemies.</li>
-                    <li><strong>Dynamic Market & Inventory:</strong> Utilized Python dictionaries and lists to manage in-game items, facilitate buying and selling, and track the player's inventory.</li>
-                    <li><strong>NPC Quests:</strong> Implemented various quests given by non-player characters, adding depth and progression to the game world.</li>
-                    <li><strong>Resource Gathering:</strong> Included mini-games for activities like fishing and lumberjacking, allowing players to collect resources.</li>
-                </ul>
-                </p>
-                <p><strong>Key Technologies:</strong> Python (primarily), `os` module, `time` module, `random` module.</p>
-                <p><strong>Challenges & Learning:</strong> This project presented significant learning curves. Managing the complexities of the in-game market and balancing character statistics proved particularly challenging. However, by relentlessly tackling these issues, I developed a crucial **researching skill**, learning effectively how to find and utilize documentation and community resources to overcome programming obstacles. This experience profoundly **solidified my core Python programming skills** and reinforced the importance of persistence in development.</p>
-                <p><strong>Impact:</strong> The successful completion of this project demonstrated my ability to apply complex programming logic to create an interactive system. It served as a powerful hands-on learning experience, significantly advancing my Python proficiency and nurturing my problem-solving and self-directed learning abilities.</p>
-                <a href="https://github.com/FZeroF0/Python-Text-RPG" class="btn-link">View on GitHub</a>
-            </div>
-
-            <div class="project-card section-card">
-                <h3>Touristic Site Data & Interaction Management (Digital Egyptian Cubs Initiative)</h3>
-                <p><strong>Problem & Goal:</strong> As part of the Digital Egyptian Cubs Initiative, our team's objective was to develop an application capable of bringing information about Egyptian touristic locations to life by managing user interactions and underlying databases. A core challenge was the scarcity of information for certain less-popular sites, which our application aimed to structure and present effectively.</p>
-                <p><strong>Solution & My Role:</strong> I was a key contributor in this **team project**, which fostered significant growth in my **communication, teamwork, and dedication** skills. My primary contribution was in the **development and initial security aspects** of the application, focusing on its core logic and database handling. Other team members managed the live deployment and user interface design.</p>
-                <p><strong>Core Functionality:</strong>
-                <ul>
-                    <li>The application was designed to administer and manage information related to various Egyptian touristic locations.</li>
-                    <li>It primarily focused on managing **user interactions** with the site and handling the associated **databases**, ensuring structured access to information.</li>
-                </ul>
-                </p>
-                <p><strong>Key Technologies:</strong> The application was built using a **block-based programming environment**, which provided a foundational understanding of application logic and database management without direct coding in languages like JavaScript or SQL at this stage. This allowed for rapid prototyping and focus on core concepts.</p>
-                <p><strong>Challenges & Learning:</strong> The most significant challenge we faced was strictly adhering to **tight deadlines** set for the project's completion. This experience was invaluable in teaching me time management and efficient collaboration under pressure. While developed with block-based tools, this project laid crucial groundwork in understanding application architecture, data flow, and the collaborative development process.</p>
-                <p><strong>Impact:</strong> This project provided a practical framework for managing and enhancing the accessibility of information for Egyptian tourist sites. Beyond the technical output, it was a pivotal experience for developing essential soft skills in a team environment.</p>
-                <p>(Code not available as this project was developed in a block-based environment.)</p>
-            </div>
-
-            <div class="project-card section-card">
-                <h3>Polybar Multi-Monitor & Robust Launch Script</h3>
-                <p><strong>Problem & Goal:</strong> To ensure a consistent and reliable display of my Polybar status bar across various monitor configurations, particularly in multi-monitor setups common in an i3 window manager environment. The goal was to automate the correct launching of Polybar instances for each connected screen, preventing display issues.</p>
-                <p><strong>Solution & My Role:</strong> As the sole developer, I crafted a concise yet powerful Bash script designed to intelligently launch Polybar. The script dynamically detects connected monitors and initiates a separate Polybar instance for each, ensuring optimal display and eliminating manual configuration headaches. It also includes a fallback mechanism for single-monitor or less conventional display environments.</p>
-                <p><strong>Core Functionality:</strong>
-                <ul>
-                    <li><strong>Dynamic Monitor Detection:</strong> Utilizes `xrandr` to query and identify all currently `connected` display outputs.</li>
-                    <li><strong>Per-Monitor Launching:</strong> Iterates through each detected monitor, launching a dedicated Polybar instance and assigning it to the correct screen via the `MONITOR` environment variable.</li>
-                    <li><strong>Graceful Fallback:</strong> Includes an `else` condition to ensure Polybar launches correctly even if `xrandr` is not available or if the setup is a single display.</li>
-                    <li><strong>Reload Command:</strong> Uses `--reload` to ensure Polybar starts fresh, reflecting the latest configuration.</li>
-                </ul>
-                </p>
-                <p><strong>Key Technologies:</strong> Bash Scripting, `xrandr` (for display management), Polybar, Linux Command Line Interface (CLI), Environment Variables.</p>
-                <p><strong>Challenges & Learning:</strong> The primary challenge involved reliably adapting Polybar's launch behavior to dynamic display changes in an i3 tiling window manager setup. This project solidified my understanding of shell scripting, `xrandr` output parsing, and managing processes with environment variables in a Linux context, ensuring a seamless user interface experience.</p>
-                <p><strong>Impact:</strong> This simple yet effective script guarantees that my Polybar always launches and displays correctly, regardless of whether I'm using my laptop screen, an external monitor, or multiple external displays. It enhances the reliability and aesthetics of my Linux desktop environment by ensuring a consistent visual status bar.</p>
-                <a href="#" class="btn-link">View on GitHub (Coming Soon!)</a>
+                <h3>Polybar Multi-Monitor & Launch Infrastructure</h3>
+                <p><strong>Problem:</strong> System panel failures across varying display arrays under tiled window environments like i3.</p>
+                <p><strong>Solution:</strong> Built an automated Bash shell framework targeting hardware configuration scripts[cite: 1]. The architecture parses active display states via <code>xrandr</code> and builds localized desktop environments seamlessly across dynamic workspace arrays[cite: 1].</p>
+                <p><strong>Key Technologies:</strong> Bash Scripting, Linux System Tools, <code>xrandr</code> Display Server[cite: 1].</p>
+                <a href="https://github.com/FZeroF0/scripts" class="btn-link" target="_blank" rel="noopener">View on GitHub</a>
             </div>
         </section>
 
@@ -119,43 +86,19 @@
             <h2>My Skills</h2>
             
             <h3>Programming Languages</h3>
-            <ul>
-                <li><strong>Python:</strong> Proficient (Your primary language, demonstrated through multiple projects).</li>
-                <li><strong>Bash:</strong> Intermediate (Strong scripting capabilities).</li>
-                <li><strong>CSS:</strong> Good grasp (Ability to style web pages effectively).</li>
-                <li><strong>HTML:</strong> Solid understanding (Foundational for web content structuring).</li>
-                <li><strong>JavaScript:</strong> Basic (Familiarity with client-side scripting).</li>
-                <li><strong>SQL:</strong> Very Basic (Introductory knowledge of database querying).</li>
+            <ul class="skills-list">
+                <li><strong>Python:</strong> Proficient (Core development & orchestration tools)[cite: 1].</li>
+                <li><strong>Bash:</strong> Intermediate (Automation & infrastructure configuration)[cite: 1].</li>
+                <li><strong>HTML & CSS:</strong> Competent (Structural & modular page design)[cite: 1].</li>
+                <li><strong>JavaScript & SQL:</strong> Basic (Functional database queries & client utilities)[cite: 1].</li>
             </ul>
 
-            <h3>Frameworks, Libraries, & APIs</h3>
-            <ul>
-                <li><strong>Python:</strong> Flask, Flask-SocketIO (for real-time communication), `requests` (for making HTTP requests), `subprocess`, `os`, `time`, `random` (Standard Python modules).</li>
-                <li><strong>APIs:</strong> GitHub Gist API, Ngrok API, No-IP API (brief experience with dynamic DNS services).</li>
-                <li><strong>Data Formats:</strong> JSON (for data exchange).</li>
-                <li><strong>Databases:</strong> SQLite (basic experience), General understanding of Relational Databases.</li>
-                <li><strong>Web Technologies (Server-side):</strong> Nginx (reverse proxy), Gunicorn (WSGI server).</li>
-            </ul>
-
-            <h3>Tools & Technologies</h3>
-            <ul>
-                <li><strong>Operating Systems:</strong> Arch Linux (Proficient, indicating strong command-line and system configuration skills), Linux Mint (Familiarity).</li>
-                <li><strong>Version Control:</strong> Git & GitHub (Basic proficiency with core operations; quick learner and adaptable to new workflows).</li>
-                <li><strong>CLI & System Utilities:</strong> Highly proficient with essential Linux CLI tools including `dunstify`, `xrandr`, `dmesg`, `pacman` (Arch package manager), `cron` (job scheduler), `dmenu`/`rofi` (application launchers), `curl` (data transfer), `wget` (non-interactive downloads), `ssh` (secure shell), `htop` (process viewer), `ping` (network reachability), `traceroute` (network path diagnostics), `vim`/`nvim` (terminal-based text editors), `nano`, `tmux` (terminal multiplexer).</li>
-                <li><strong>IDEs / Text Editors:</strong> VS Code, NeoVim (nvim), Nano.</li>
-                <li><strong>Containerization:</strong> Docker (Conceptual understanding and early hands-on experience with containerization).</li>
-                <li><strong>Networking & Web Services:</strong> In-depth practical networking knowledge, including strong understanding of Network Protocols (TCP/IP, HTTP/HTTPS, DNS), Web Server Configuration (Nginx, Gunicorn), Dynamic DNS, and Network Troubleshooting.</li>
-                <li><strong>System Monitoring & Debugging:</strong> Proficient with `dmesg` (for kernel messages) and `journalctl` (for systemd logs).</li>
-                <li><strong>Desktop Environment Customization:</strong> Proficient in configuring and customizing `i3` Window Manager (unique keybindings, Polybar integration), and scripting for Polybar status bar modules.</li>
-            </ul>
-
-            <h3>Soft Skills & Methodologies</h3>
-            <ul>
-                <li><strong>Systematic Problem-Solving & Persistent Debugging:</strong> Approaches complex technical challenges with methodical research, and demonstrates a tenacious "brute-force" mentality to find solutions when conventional methods don't suffice.</li>
-                <li><strong>Extensive Resourcefulness & Independent Learning:</strong> Adept at leveraging a wide array of information sources, including online communities (Stack Overflow, Reddit), official documentation (Git), and unconventional channels, to rapidly acquire knowledge and overcome obstacles. Proactively learns the fundamentals of new tools and technologies that promise practical utility.</li>
-                <li><strong>Collaborative Teamwork & Effective Communication:</strong> Proven ability to work effectively in team environments, actively sharing ideas, planning strategies, and collaborating to achieve common goals.</li>
-                <li><strong>Strong Initiative & Proactivity:</strong> Consistently identifies opportunities to create value, whether by founding a school club or developing custom scripts to automate personal system tasks.</li>
-                <li><strong>Resilience & Dedication:</strong> Committed to seeing projects through to completion, even when facing significant technical difficulties or tight deadlines.</li>
+            <h3>Tools & Infrastructure</h3>
+            <ul class="skills-list">
+                <li><strong>Operating Systems:</strong> Linux (Arch Linux proficient, Linux Mint experienced)[cite: 1].</li>
+                <li><strong>DevOps & Web Systems:</strong> Nginx, Docker (Basic), CI/CD Principles, Git & GitHub Version Control[cite: 1].</li>
+                <li><strong>Networking:</strong> Thorough practical implementation of TCP/IP, HTTP/S, and DNS routing[cite: 1].</li>
+                <li><strong>CLI Utilities:</strong> Highly proficient with modern terminal tools (Vim/NeoVim, Tmux, Pacman, SSH, Htop)[cite: 1].</li>
             </ul>
         </section>
 
@@ -163,59 +106,43 @@
             <h2>Experience & Leadership</h2>
             
             <div class="experience-item">
+                <h3>School Website Administrator</h3>
+                <p class="company-meta">Dar Elhanan Boys School, Giza, Egypt | February 2025 - Present[cite: 1]</p>
+                <ul>
+                    <li>Deliver crucial IT updates and continuous support to manage materials across school portals[cite: 1].</li>
+                    <li>Optimize localized HTML layouts and configure data modules via database structures using SQL[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
                 <h3>Digital Egyptian Cubs Initiative (DECI)</h3>
-                <img src="lvl-one-cert.jpg">
-                <p>second cert place holder</p>
-                <p><em>Participant & Project Contributor</em></p>
+                <p class="company-meta">Participant & Mentorship Contributor | Egypt[cite: 1]</p>
                 <ul>
-                    <li>Actively participated in a government-sponsored initiative, completing Level 1 certification and awaiting Level 2.</li>
-                    <li>Dedicated 5 hours per week for a full school year, engaging in rigorous technical training.</li>
-                    <li>Received direct guidance and mentorship from senior government developers, gaining insights into professional development practices.</li>
-                    <li>Successfully passed two challenging exams at each stage to advance through the program.</li>
+                    <li>Completed comprehensive Level 1 & Level 2 structural certifications and presently engaging in the program's mentorship sequence[cite: 1].</li>
+                    <li>Committed 5 structured engineering hours per week throughout academic phases under high-level government developers[cite: 1].</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>Evolution Academy</h3>
-                <img src="python-cert.jpg">
+                <h3>Co-Founder & Director, School Chess Club</h3>
+                <p class="company-meta">Dar Elhanan Boys School, Giza, Egypt | October 2024 - Present[cite: 1]</p>
                 <ul>
-                    <li>Completed foundational courses in Python, HTML, and CSS during 6th grade.</li>
-                    <li>Earned a Python certificate, demonstrating early proficiency in programming fundamentals.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <h3>School Website Administration</h3>
-                <p><em>IT Assistant (Ongoing)</em></p>
-                <ul>
-                    <li>Provide continuous support to school IT officials, assisting with the administration of the school's website.</li>
-                    <li>Responsibilities include inputting data and updating HTML sites to enhance user-friendliness.</li>
-                    <li>Gained practical experience with basic SQL and JavaScript in a real-world administrative context.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <h3>School Chess Club</h3>
-                <p><em>Co-Founder & Leader</em></p>
-                <ul>
-                    <li>Co-founded and lead a formally recognized school chess club.</li>
-                    <li>Organize and participate in regular practice sessions.</li>
-                    <li>Mentor and teach new members, fostering a community of learners and enthusiasts.</li>
-                    <li>Demonstrates strong initiative, organizational skills, and a commitment to community building.</li>
+                    <li>Spearheaded operations and established practice structures while directly mentoring 7 new active club members[cite: 1].</li>
                 </ul>
             </div>
         </section>
 
         <section id="contact" class="container section-card">
             <h2>Contact Me</h2>
-            <p>You can reach me at: <strong>khaledelsayedmoussa1@gmail.com</strong></p>
-            <p>Connect with me on GitHub: <a href="https://github.com/FZeroF0" target="_blank">github.com/FZEROF0</a></p>
-            </section>
+            <p>Email: <strong><a href="mailto:khaledelsayedmoussa1@gmail.com">khaledelsayedmoussa1@gmail.com</a></strong>[cite: 1]</p>
+            <p>GitHub: <a href="https://github.com/FZeroF0" target="_blank" rel="noopener">github.com/FZeroFO</a>[cite: 1]</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/khaled-moussa-a49072371" target="_blank" rel="noopener">linkedin.com/in/khaled-moussa</a>[cite: 1]</p>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Khaled Moussa. All rights reserved.</p>
+            <p>&copy; 2026 Khaled Moussa. All rights reserved.</p>
         </div>
     </footer>
 </body>
